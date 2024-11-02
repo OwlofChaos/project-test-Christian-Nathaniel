@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suitmedia Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="image_2024-11-02_160837711-removebg-preview.png" alt="logo">
+            <ul>
+                <li><a href="#work" class="active">Work</a></li>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#services" class="active">Services</a></li>
+                <li><a href="#ideas" class="active">Ideas</a></li>
+                <li><a href="#careers" class="active">Careers</a></li>
+                <li><a href="#contact" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <div class="wrap">
+            <img src="app-idea-card.png" alt="Banner Image" class="banner-image" id="banner-image">
+            <div class="banner-text">
+                <h1 class="title">Ideas</h1>
+                <p class="desc">Where all our great things begin</p>
+            </div>
+        </div>
+      </div>
+      <section>
+      <div class="post-list">
+        <div class="post-list-header">
+          <select id="sort-by">
+            <option value="latest">Newest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+          <select id="items-per-page">
+            <option value="10">10 per page</option>
+            <option value="20">20 per page</option>
+            <option value="50">50 per page</option>
+          </select>
+        </div>
+      
+        <ul class="post-list-items">
+          </ul>
+      
+        <div class="pagination">
+          <button id="<prev-page>">Previous</button>
+          <button id="next-page">Next</button>
+        </div>
+      </div>
+    </section>
+</body>
+<script src="./script.js"></script>
+</html>

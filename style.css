@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 0 8%;
+    background: #ff6a00;
+    transition: all 0.3s ease-in-out;
+    z-index: 100; 
+}
+
+.nav-up {
+    top: -10vh;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    transition: .3s;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+nav img{
+    width: 10%;
+    height: 10%;
+}
+
+nav ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after, nav ul li a:focus::after{
+    width: 100%;
+}
+
+.banner {
+    position: static;
+    margin-top: 10vh;
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+    
+}
+
+.banner-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    z-index: -1;
+    transform: translateZ(-10px) scale(2);
+}
+
+.title{
+    margin-left: 6.5vh;
+    margin-right: auto;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    transform: translateZ(-5px) scale(1.5);
+}
+
+.desc{
+    color: white;
+    margin-top: 1vh;
+    text-shadow: 0 0 5px black;
+    transform: translateZ(-5px) scale(1.5);
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.post-list-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.post-list-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.post-list-item .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post-list-item .description {
+  font-size: 14px;
+  color: #666;
+}
